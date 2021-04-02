@@ -36,7 +36,7 @@ class QuoteItem(Item):
         output_processor=TakeFirst()
     )
     author_birthday = Field(
-        input_procesor=MapCompose(convert_date),
+        input_processor=MapCompose(convert_date),
         output_processor=TakeFirst()
     )
     author_born_location = Field(
